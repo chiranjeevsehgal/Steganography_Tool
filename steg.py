@@ -1,5 +1,5 @@
 import streamlit as st
-# from stegano import lsb
+from stegano import lsb
 import stegano
 from PIL import Image
 from cryptography.fernet import Fernet
@@ -71,7 +71,7 @@ def encode_text():
                 temp_path = "temp_image.png"
                 image.save(temp_path)
                 
-                secret = stegano.lsb.hide(temp_path, message_to_hide)
+                secret = lsb.hide(temp_path, message_to_hide)
                 
                 # Saving the image
                 secret_image_path = "secret_image.png"
@@ -113,7 +113,7 @@ def decode_text():
                 
             # To decode and decrypt the info
             try:
-                revealed_text = stegano.lsb.reveal(secret_image)
+                revealed_text = lsb.reveal(secret_image)
 
                 if decrypt_text and key_input:
                     try:
