@@ -2,4 +2,3 @@ streamlit
 stegano
 pillow
 cryptography
-apt-get update && apt-get install libgl1
