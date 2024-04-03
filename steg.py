@@ -9,12 +9,13 @@ def display_home():
     st.header("Welcome to the Steganography Tool!")
     st.write("""
     This tool allows you to securely hide text within images using steganography techniques.
-    Whether you're looking to encode secret messages or decode them, this tool has you covered.
+    Whether you're looking to encode secret messages, encrypt them or decode and decrypt them, this tool has you covered.
     
     **Features:**
-    - **Encoding:**
+    - **Encoding**
     - **Decoding**
     - **Encryption**
+    - **Decryption**
     
     Get started by selecting either "Encode" or "Decode" from the sidebar menu. For more details, select the About option. Enjoy exploring the capabilities of digital steganography!
     """)
